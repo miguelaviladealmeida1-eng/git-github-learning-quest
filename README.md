@@ -1,24 +1,90 @@
-# Jornada Gamificada de Git e GitHub
+# 🕹️ Git & GitHub Learning Quest
 
-| ![](.gitbook/assets/git-github.png) | Nesta jornada, vamos explorar o **universo do Git e do GitHub**, aprendendo desde os conceitos fundamentais de **versionamento de código** até técnicas mais avançadas de **colaboração e manipulação de histórico**. A cada nível, vamos desbloquear novos conhecimentos, sempre com tarefas práticas, objetivos claros e com o apoio de itens do [inventário](inventario/pergaminho-do-controle-temporal-de-codigos.md), para que você ganhe confiança ao versionar seus projetos! |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+> Uma jornada prática e gamificada para aprender Git, GitHub e fluxos modernos de colaboração.
 
-## 🕹️ Objetivo
+![Git](https://img.shields.io/badge/Git-version%20control-orange?logo=git) ![GitHub](https://img.shields.io/badge/GitHub-collaboration-black?logo=github) ![Docs](https://img.shields.io/badge/docs-progressive-blue) ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
-Aprender os conceitos fundamentais de versionamento de código até técnicas mais avançadas de colaboração e manipulação de histórico com uma abordagem de aprendizagem gamificada.
+## 🎯 Sobre o projeto
 
-## 🗺️ Jornada
+Este projeto transforma conceitos de Git e GitHub em uma experiência prática, progressiva e organizada. A proposta é aprender fazendo, com níveis, desafios, comandos e situações próximas do fluxo utilizado em projetos reais.
 
-Conheça a jornada de aprendizagem e explore os diferentes níveis para desbloquear as conquistas.
+## 🧭 Jornada
 
-<table><thead><tr><th width="128">Nível</th><th width="282">Aventura</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>🔒 Nível 1</strong></td><td><a href="nivel-1-conhecendo-o-universo/o-que-e-versionamento-de-codigo.md">Conhecendo o Universo</a></td><td>Compreenda o cenário: por que versionar código, o que é Git, o que é GitHub, e como tudo se conecta.</td></tr><tr><td><strong>🔒 Nível 2</strong></td><td><a href="nivel-2-preparando-o-ambiente/instalando-o-git.md">Preparando o Ambiente</a></td><td>Configure o Git na sua máquina e crie seu primeiro repositório local.</td></tr><tr><td><strong>🔒 Nível 3</strong></td><td><a href="nivel-3-rastreando-mudancas/entendendo-commits-e-status.md">Rastreando Mudanças</a></td><td>Aprenda a salvar e rastrear o progresso do seu projeto com comandos fundamentais.</td></tr><tr><td><strong>🔒 Nível 4</strong> </td><td><a href="nivel-4-trabalhando-com-branches/criando-uma-nova-branch.md">Trabalhando com Branches</a></td><td>Desenvolva funcionalidades isoladas sem bagunçar o código principal.</td></tr><tr><td><strong>🔒Nível 5</strong></td><td><a href="nivel-5-integrando-com-github/conectando-seu-repositorio-local-ao-github.md">Integrando com o GitHub</a></td><td>Conecte seu repositório ao GitHub e aprenda a sincronizar com a nuvem.</td></tr><tr><td><strong>🔒 Nível 6</strong></td><td><a href="nivel-6-viajando-no-tempo/alterando-a-mensagem-de-um-commit.md">Viajando no Tempo</a></td><td>Refatore o passado e corrija o que ficou para trás com recursos avançadas.</td></tr><tr><td><strong>🔒 Nível 7</strong></td><td><a href="nivel-7-colaborando-em-projetos/criando-um-pull-request.md">Colaborando em Projetos</a></td><td>Contribua com projetos, abra PRs e trabalhe em equipe de forma organizada.</td></tr></tbody></table>
+| Nível | Tema | Status |
+|---|---|---|
+| 1 | Conhecendo o Universo | 🟢 |
+| 2 | Preparando o Ambiente | 🟢 |
+| 3 | Rastreando Mudanças | 🟢 |
+| 4 | Trabalhando com Branches | 🟢 |
+| 5 | Integrando com GitHub | 🟢 |
+| 6 | Viajando no Tempo | 🟢 |
+| 7 | Colaborando em Projetos | 🟢 |
+| 8 | Fluxos Profissionais | 🟡 |
+| 9 | CI/CD e Automação | 🔵 |
+| 10 | Projeto Final | 🔵 |
 
-## 📦 Inventário
+## 📚 Documentação
 
-Utilize os itens armazenados no seu [inventário](inventario/pergaminho-do-controle-temporal-de-codigos.md) para te ajudar na progressão ao longo dos níveis e conclusão das tarefas.
+- [Arquitetura](docs/architecture.md)
+- [Referência de comandos](docs/command-reference.md)
+- [Roadmap](docs/roadmap.md)
+- [Contribuindo](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
 
-<table><thead><tr><th width="410">Item</th><th>Descrição</th></tr></thead><tbody><tr><td>📜 <a href="inventario/pergaminho-do-controle-temporal-de-codigos.md"><strong>Pergaminho do Controle Temporal de Códigos</strong></a></td><td>Glossário estruturado em seções temáticas com os termos mais comuns de Versionamento de Código, Git e GitHub.</td></tr></tbody></table>
+## 🌳 Estratégia de branches
 
-***
+```text
+main
+  ↑
+develop
+  ↑
+feature/*  fix/*  docs/*
+```
 
-Feito com 💛 por [Eli](https://github.com/elidianaandrade).
+`main` representa a versão estável. `develop` concentra a próxima evolução. Mudanças são feitas em branches específicas e integradas por Pull Request.
+
+## 🧩 Estrutura
+
+```text
+.
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── pull_request_template.md
+├── docs/
+├── inventario/
+├── nivel-1-conhecendo-o-universo/
+├── nivel-2-preparando-o-ambiente/
+├── nivel-3-rastreando-mudancas/
+├── nivel-4-trabalhando-com-branches/
+├── nivel-5-integrando-com-github/
+├── nivel-6-viajando-no-tempo/
+├── nivel-7-colaborando-em-projetos/
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+└── SUMMARY.md
+```
+
+## 🛠️ Tecnologias e conceitos
+
+- Git e GitHub
+- Markdown
+- GitHub Issues e Pull Requests
+- Branching strategies
+- Conventional Commits
+- Code Review
+- CI/CD
+- Versionamento Semântico
+
+## 🚀 Objetivos
+
+Ao concluir a jornada, a pessoa deverá conseguir criar e organizar repositórios, trabalhar com branches, escrever commits claros, recuperar versões, resolver conflitos, abrir e revisar Pull Requests e aplicar boas práticas de colaboração em projetos profissionais.
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Miguel Ávila de Almeida** como projeto de estudo, documentação e portfólio.
+
+---
+
+⭐ Se este projeto ajudar nos seus estudos, deixe uma estrela e acompanhe a evolução da jornada!
